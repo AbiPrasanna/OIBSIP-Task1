@@ -1,0 +1,23 @@
+.loc {
+    animation-name: color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color {
+    0% {
+        color: blueviolet;
+    }
+    25% {
+        color: brown;
+    }
+    50% {
+        color: darkgreen;
+    }
+    75% {
+        color: crimson;
+    }
+    100% {
+        color: lightseagreen;
+    }
+}

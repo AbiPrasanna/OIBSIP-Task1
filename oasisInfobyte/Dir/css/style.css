@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", cutive;
+    font-weight: bold;
+} 
+
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+    padding: 10px 10%;
+    align-items: center;
+}
+
+li,a,button{
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: aliceblue;
+    color: rgb(4, 4, 219);
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+header > button:hover{
+    background-color: blueviolet;
+}
+
+header > button{
+    padding:10px 15px;
+    background-color: rgb(226, 129, 49);
+    cursor: pointer;
+    border: 10px;
+    border-radius: 10px;
+}
+
+.wrapper{
+    background: url("../img/tourism2.jpg") no-repeat center center / cover;
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding: 10px 0%;
+}
+.wrapper:before{
+    position: absolute;
+    content: '';
+}
+
+.Description{
+    display: flex;
+    padding: 80px 10%;
+    justify-content: space-between;
+}
+
+.hero-info p{
+    margin: 30px 10%;
+    font-family: 100;
+    line-height: 2;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: rgb(230, 138, 73);
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-out{
+    border-radius: 90px;
+    color: red;
+    border-color: black;
+    padding: 12px 30px;
+    /* font size: 30px; */
+    font-weight : 1000;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-out:hover{
+    background-color: rgb(192, 147, 235);
+}
+.scroll {
+    display: flex;
+    padding: 80px 10%;
+    justify-content: space-between;
+    line-height: 2;
+}
+.hero-info {
+    /* display: flex;
+    padding: 80px 10%;  */
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory; 
+    margin: 30px 10%;
+    font-family: 100;
+    line-height: 2;
+}
+/* section { 
+    height: 100vh;
+    scroll-snap-align: start;
+     display: inline-block; 
+     place-items: center;
+}  */
+.scroll section:nth-child(About) {
+    background-color: aquamarine;
+   
+}
+.scroll section:nth-child(About) {
+    background-color: coral;
+    
+}
+.scr {
+    /* display: table; */
+    padding: 80px 10%;  
+    height: 100vh;
+    /* width: 3500px; */
+    overflow-y: auto;
+    scroll-snap-type: y mandatory; 
+    margin: 30px 10%;
+    /* text-align: center; */
+    font-family: 100;
+    line-height: 2;
+    
+    
+background: rgb(240, 164, 64);
+
+border: 10px groove rgb(209, 128, 22);
+color: rgb(77, 0, 80);
+display: grid;
+
+grid-template-columns: 1fr 1fr 1fr;
+
+grid-template-rows: 1fr 1fr 1fr;
+
+row-gap: 25px;
+
+column-gap: 25px;
+    /* padding: 50px 50px; */
+}
